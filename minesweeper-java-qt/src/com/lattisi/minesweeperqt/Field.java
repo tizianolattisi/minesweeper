@@ -115,7 +115,7 @@ public class Field extends QMainWindow {
         label.setFixedSize(new QSize(36, 36));
         Integer nOfBombs = game.howManyBombs(coords[0], coords[1]);
         if (nOfBombs>0){
-            label.setText(game.howManyBombs(coords[0], coords[1]).toString());
+            label.setText(nOfBombs.toString());
             switch (nOfBombs){
                 case 1:
                     style += "color: blue;";
